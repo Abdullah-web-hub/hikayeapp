@@ -6,9 +6,6 @@ import Text "mo:base/Text";
 
 actor Hikayeler {
 
-  /**
-   * Types
-   */
 
   // Hikaye kimliği tipi
   public type StoryId = Nat32;
@@ -30,6 +27,11 @@ actor Hikayeler {
     name : Text;
     description : Text;
   };
+
+  public type Story = {
+      name : Text;
+      author : Text;
+    };
 
   /**
    * Uygulama Durumu
